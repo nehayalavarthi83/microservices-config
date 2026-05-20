@@ -2,22 +2,15 @@ server:
   port: 8083
 
 spring:
-  application:
-    name: ORDERSERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/dataloader
+    username: root
+    password: Gnanesh@17091
 
 eureka:
   client:
-    register-with-eureka: true
-    fetch-registry: true
-
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
   instance:
-    hostname: localhost
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info
+    prefer-ip-address: true
