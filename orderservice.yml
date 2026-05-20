@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/dataloader
+    url: jdbc:mysql://localhost:3306/wiprotraining
     username: root
     password: 12345678
 
